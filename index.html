@@ -1,0 +1,1157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unfazed × Hibbett — Partnership Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Narrow:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --red:#D11A2A;          /* primary athletic red */
+    --red-dark:#8E0F1A;
+    --red-deep:#5A0B12;
+    --ink:#0E0E10;
+    --ink-2:#1A1A1D;
+    --paper:#F4EFE6;        /* cream */
+    --paper-2:#EAE2D2;
+    --muted:#7A7A7E;
+    --rule:rgba(14,14,16,.14);
+    --rule-d:rgba(244,239,230,.18);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--paper);color:var(--ink);font-family:'Archivo',sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden;max-width:100%;}
+  body{overflow-x:hidden;width:100%;}
+  img,svg{max-width:100%;height:auto;}
+  ::selection{background:var(--red);color:#fff}
+
+  /* utility */
+  .wrap{max-width:1240px;margin:0 auto;padding:0 56px;}
+  .mono{font-family:'JetBrains Mono',monospace;letter-spacing:1.5px;text-transform:uppercase;font-size:11px;color:var(--muted);}
+  .display{font-family:'Anton',sans-serif;letter-spacing:.01em;line-height:.88;text-transform:uppercase;}
+  .nar{font-family:'Archivo Narrow',sans-serif;}
+  em.serifish{font-style:italic;font-family:'Archivo Narrow',sans-serif;font-weight:500;}
+  .pill{display:inline-flex;align-items:center;gap:8px;padding:5px 10px 4px;border:1px solid currentColor;border-radius:999px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;}
+  .dot{width:6px;height:6px;border-radius:50%;background:currentColor;display:inline-block;}
+  .red{color:var(--red)!important}
+  .bg-red{background:var(--red)!important;color:#fff!important}
+  .bg-ink{background:var(--ink)!important;color:var(--paper)!important}
+  .ko{background:var(--red);color:#fff;padding:0 .18em;}
+  hr.rule{border:0;border-top:1px solid var(--rule);margin:0;}
+  hr.rule.d{border-top-color:var(--rule-d);}
+  section{position:relative;padding:120px 0;}
+  section.dark{background:var(--ink);color:var(--paper);}
+  section.dark .mono{color:rgba(244,239,230,.5);}
+  section.dark hr.rule{border-top-color:var(--rule-d);}
+  section.red-section{background:var(--red);color:#fff;}
+  section.red-section .mono{color:rgba(255,255,255,.78);}
+
+  /* ---------- TOP NAV / DOC HEADER ---------- */
+  .topbar{position:sticky;top:0;z-index:40;background:var(--ink);color:var(--paper);border-bottom:1px solid #2a2a2d;}
+  .tb-inner{max-width:1240px;margin:0 auto;padding:14px 56px;display:flex;align-items:center;justify-content:space-between;gap:24px;}
+  .tb-mark{font-family:'Anton',sans-serif;font-size:22px;letter-spacing:2px;display:flex;align-items:center;gap:10px;}
+  .tb-mark .x{color:var(--red);font-family:'Archivo',sans-serif;font-weight:300;font-size:18px;}
+  .tb-mark .hb{display:inline-flex;align-items:baseline;gap:0;}
+  .tb-mark .hb b{display:inline-block;width:14px;height:14px;background:var(--red);transform:rotate(45deg);margin-right:8px;align-self:center;}
+  .tb-meta{display:flex;align-items:center;gap:18px;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(244,239,230,.6);}
+  .tb-meta .live{color:var(--red);}
+  .tb-meta .live::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--red);display:inline-block;margin-right:6px;vertical-align:1px;animation:p 1.6s infinite;}
+  @keyframes p{0%,60%{opacity:1}80%{opacity:.2}100%{opacity:1}}
+
+  /* ---------- COVER ---------- */
+  .cover{padding:0;background:var(--paper);position:relative;overflow:hidden;border-bottom:1px solid var(--rule);}
+  .cover-band{background:var(--red);color:#fff;padding:10px 0;overflow:hidden;border-top:1px solid #b21422;border-bottom:1px solid #b21422;}
+  .cover-band-inner{display:flex;gap:48px;animation:marq 38s linear infinite;white-space:nowrap;font-family:'Anton',sans-serif;font-size:18px;letter-spacing:3px;}
+  .cover-band-inner span{display:inline-flex;align-items:center;gap:48px;}
+  .cover-band-inner span::after{content:'◆';color:rgba(255,255,255,.55);font-size:12px;}
+  @keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  .cover-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:0;align-items:stretch;border-bottom:1px solid var(--rule);}
+  .cover-left{padding:80px 56px 64px;border-right:1px solid var(--rule);position:relative;}
+  .cover-eye{display:flex;align-items:center;gap:14px;margin-bottom:48px;}
+  .cover-eye .doc{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);}
+  .cover-eye .tag{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--red);}
+  .cover-title{font-family:'Anton',sans-serif;font-size:148px;line-height:.84;letter-spacing:-1px;text-transform:uppercase;margin-bottom:34px;}
+  .cover-title .l1{display:block;}
+  .cover-title .l2{display:block;color:var(--red);}
+  .cover-title .l3{display:block;font-family:'Archivo Narrow',sans-serif;font-size:48px;font-style:italic;font-weight:500;letter-spacing:0;line-height:1;margin-top:14px;color:var(--ink);text-transform:none;}
+  .cover-lede{max-width:600px;font-size:18px;line-height:1.55;color:#2a2a2d;margin-bottom:36px;}
+  .cover-lede strong{font-weight:700;}
+  .cover-lede em{font-style:italic;font-family:'Archivo Narrow',sans-serif;}
+  .cover-cta{display:flex;gap:18px;align-items:center;flex-wrap:wrap;}
+  .btn-red{background:var(--red);color:#fff;padding:14px 22px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;border:0;text-decoration:none;display:inline-flex;align-items:center;gap:10px;}
+  .btn-red::after{content:'→';font-family:'Archivo',sans-serif;}
+  .btn-ghost{background:transparent;color:var(--ink);padding:14px 22px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;border:1px solid var(--ink);text-decoration:none;}
+
+  .cover-right{background:var(--ink);color:var(--paper);padding:56px 44px 44px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;}
+  .cover-right::before{content:'';position:absolute;inset:auto -40px -40px auto;width:280px;height:280px;background:var(--red);border-radius:50%;opacity:.85;filter:blur(2px);}
+  .cover-right::after{content:'';position:absolute;left:-10px;top:-10px;right:-10px;bottom:-10px;background:repeating-linear-gradient(45deg,transparent 0 22px,rgba(244,239,230,.025) 22px 23px);pointer-events:none;}
+  .cr-eye{position:relative;z-index:2;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(244,239,230,.65);margin-bottom:20px;display:flex;align-items:center;gap:10px;}
+  .cr-eye::before{content:'';width:24px;height:1px;background:var(--red);}
+  .cr-headline{position:relative;z-index:2;font-family:'Anton',sans-serif;font-size:50px;line-height:.92;letter-spacing:.5px;text-transform:uppercase;margin-bottom:auto;}
+  .cr-headline .em{color:var(--red);}
+  .cr-stats{position:relative;z-index:2;margin-top:40px;border-top:1px solid rgba(244,239,230,.22);}
+  .cr-row{display:grid;grid-template-columns:120px 1fr;align-items:baseline;gap:16px;padding:18px 0 16px;border-bottom:1px solid rgba(244,239,230,.14);}
+  .cr-row:last-child{border-bottom:0;}
+  .cr-row .n{font-family:'Anton',sans-serif;font-size:54px;line-height:.85;color:#fff;letter-spacing:.5px;text-align:left;display:inline-flex;align-items:baseline;}
+  .cr-row .n .u{font-size:22px;color:var(--red);margin-left:3px;font-family:'Anton',sans-serif;letter-spacing:1px;}
+  .cr-row .k{font-family:'Archivo',sans-serif;font-weight:600;font-size:14px;line-height:1.35;color:rgba(244,239,230,.92);letter-spacing:.2px;}
+  .cr-row .k .sub{display:block;font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(244,239,230,.5);font-weight:500;margin-top:4px;}
+
+  /* ---------- FRONT MATTER ---------- */
+  .frontmatter{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-bottom:1px solid var(--rule);}
+  .fm-cell{padding:28px 32px;border-right:1px solid var(--rule);}
+  .fm-cell:last-child{border-right:0;}
+  .fm-k{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:8px;}
+  .fm-v{font-family:'Archivo Narrow',sans-serif;font-weight:600;font-size:16px;line-height:1.35;}
+
+  /* ---------- SECTION HEAD ---------- */
+  .sec-hd{display:grid;grid-template-columns:120px 1fr;gap:48px;align-items:end;margin-bottom:64px;}
+  .sec-num{font-family:'Anton',sans-serif;font-size:120px;line-height:.85;color:var(--red);}
+  section.dark .sec-num{color:var(--red);}
+  .sec-label{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--red);margin-bottom:14px;}
+  .sec-title{font-family:'Anton',sans-serif;font-size:72px;line-height:.92;letter-spacing:.5px;text-transform:uppercase;max-width:980px;}
+  .sec-lede{font-size:18px;line-height:1.55;max-width:780px;margin-top:24px;color:#2a2a2d;}
+  section.dark .sec-lede{color:rgba(244,239,230,.78);}
+
+  /* ---------- 01 — OPPORTUNITY ---------- */
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--rule);}
+  .why-cell{padding:42px 36px;border-right:1px solid var(--rule);}
+  .why-cell:last-child{border-right:0;}
+  .why-cell .n{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--red);letter-spacing:2px;margin-bottom:18px;}
+  .why-cell h3{font-family:'Anton',sans-serif;font-size:34px;line-height:.95;text-transform:uppercase;margin-bottom:16px;}
+  .why-cell p{font-size:15px;line-height:1.6;color:#2a2a2d;}
+  .why-cell p strong{color:var(--ink);}
+
+  .ledger{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:0;background:var(--ink);color:var(--paper);}
+  .ledger .cell{padding:42px 32px;border-right:1px solid rgba(244,239,230,.12);position:relative;}
+  .ledger .cell:last-child{border-right:0;}
+  .ledger .n{font-family:'Anton',sans-serif;font-size:84px;line-height:.85;color:#fff;}
+  .ledger .n .u{color:var(--red);font-size:38px;margin-left:2px;}
+  .ledger .k{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(244,239,230,.55);margin:10px 0 14px;}
+  .ledger .b{font-size:13.5px;line-height:1.55;color:rgba(244,239,230,.78);}
+  .ledger .b strong{color:#fff;}
+
+  /* ---------- 02 — SOCIAL ---------- */
+  .views-hero{display:grid;grid-template-columns:1.3fr 1fr;gap:0;border:1px solid var(--rule-d);background:var(--ink-2);}
+  .vh-l{padding:56px 48px;}
+  .vh-l .big{font-family:'Anton',sans-serif;font-size:188px;line-height:.85;color:#fff;}
+  .vh-l .big .u{color:var(--red);font-size:96px;margin-left:6px;}
+  .vh-l .cap{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(244,239,230,.6);margin:18px 0 18px;}
+  .vh-l .body{font-size:16px;line-height:1.6;color:rgba(244,239,230,.84);max-width:520px;}
+  .vh-l .body strong{color:#fff;}
+  .vh-r{background:var(--red);padding:48px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;position:relative;overflow:hidden;}
+  .vh-r::after{content:'';position:absolute;right:-60px;bottom:-60px;width:200px;height:200px;border:18px solid rgba(255,255,255,.13);border-radius:50%;}
+  .vh-r .eye{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.75);margin-bottom:24px;}
+  .vh-r .head{font-family:'Anton',sans-serif;font-size:46px;line-height:.96;text-transform:uppercase;margin-bottom:18px;}
+  .vh-r .sub{font-size:14.5px;line-height:1.55;color:rgba(255,255,255,.9);}
+  .vh-r .sub strong{color:#fff;}
+
+  /* breakdown bars */
+  .breakdown{margin-top:0;border:1px solid var(--rule);border-top:0;display:grid;grid-template-columns:1fr 1fr;gap:0;}
+  .bd-l, .bd-r{padding:48px 40px;}
+  .bd-l{border-right:1px solid var(--rule);background:var(--paper);}
+  .bd-r{background:#fff;}
+  .bd-title{font-family:'Anton',sans-serif;font-size:30px;line-height:1;text-transform:uppercase;margin-bottom:6px;color:var(--ink);}
+  .bd-sub{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase;color:#555;margin-bottom:28px;}
+  .bar-row{display:grid;grid-template-columns:1fr 64px;gap:18px;align-items:center;padding:11px 0;border-bottom:1px solid rgba(14,14,16,.10);}
+  .bar-row:last-child{border-bottom:0;}
+  .bar-row .name{font-size:13.5px;font-weight:600;color:var(--ink);}
+  .bar-row .pct{font-family:'JetBrains Mono',monospace;font-size:13.5px;font-weight:700;color:var(--red);text-align:right;letter-spacing:.5px;}
+  .bar-wrap{grid-column:1/3;height:10px;background:rgba(14,14,16,.07);position:relative;margin-top:8px;border-radius:1px;}
+  .bar-fill{position:absolute;left:0;top:0;bottom:0;background:var(--red);}
+  .bd-r .bar-fill{background:var(--ink);}
+  .bd-r .bar-row .pct{color:var(--ink);}
+  .bar-row.full{grid-template-columns:1fr;}
+  .bar-row.full .meta{display:flex;justify-content:space-between;align-items:baseline;gap:18px;}
+
+  /* ---------- 03 — DEMOGRAPHICS ---------- */
+  .demo-row{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--rule);}
+  .demo-cell{padding:36px 32px;border-right:1px solid var(--rule);background:var(--paper);}
+  .demo-cell:last-child{border-right:0;}
+  .demo-cell .src{font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:6px;}
+  .demo-cell .ttl{font-family:'Anton',sans-serif;font-size:24px;text-transform:uppercase;margin-bottom:22px;}
+  .demo-line{display:flex;justify-content:space-between;align-items:baseline;padding:11px 0;border-bottom:1px dashed rgba(14,14,16,.16);font-size:13.5px;}
+  .demo-line:last-child{border-bottom:0;}
+  .demo-line .k{font-weight:500;}
+  .demo-line .v{font-family:'JetBrains Mono',monospace;color:var(--red);font-weight:600;}
+
+  .demo-overlay{margin-top:48px;background:var(--red);color:#fff;display:grid;grid-template-columns:140px 1fr;gap:48px;padding:48px 40px;align-items:center;}
+  .demo-overlay .big{font-family:'Anton',sans-serif;font-size:128px;line-height:.85;color:#fff;}
+  .demo-overlay h4{font-family:'Anton',sans-serif;font-size:36px;line-height:1;text-transform:uppercase;margin-bottom:12px;}
+  .demo-overlay p{font-size:15px;line-height:1.6;max-width:780px;}
+  .demo-overlay p strong{color:#fff;}
+
+  /* ---------- 04 — NIKE DETAIL ---------- */
+  .nike-row{display:grid;grid-template-columns:1.1fr 1fr;gap:0;border:1px solid var(--rule-d);}
+  .nike-l{padding:56px 48px;background:var(--ink);color:var(--paper);}
+  .nike-r{padding:0;background:var(--ink-2);position:relative;overflow:hidden;}
+  .nike-r img{width:100%;height:100%;object-fit:cover;display:block;}
+  .nike-tag{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-bottom:18px;}
+  .nike-h{font-family:'Anton',sans-serif;font-size:64px;line-height:.92;text-transform:uppercase;margin-bottom:24px;color:#fff;}
+  .nike-h .em{color:var(--red);}
+  .nike-body{font-size:15.5px;line-height:1.65;color:rgba(244,239,230,.82);margin-bottom:24px;max-width:560px;}
+  .nike-body strong{color:#fff;}
+  .nike-facts{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid rgba(244,239,230,.16);margin-top:24px;}
+  .nike-fact{padding:20px 0;border-bottom:1px dashed rgba(244,239,230,.18);display:flex;justify-content:space-between;align-items:baseline;gap:24px;}
+  .nike-fact:nth-child(odd){padding-right:24px;border-right:1px solid rgba(244,239,230,.12);}
+  .nike-fact:nth-child(even){padding-left:24px;}
+  .nike-fact .k{font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(244,239,230,.55);}
+  .nike-fact .v{font-family:'Archivo Narrow',sans-serif;font-weight:600;font-size:15px;color:#fff;text-align:right;}
+
+  .flyer-cap{position:absolute;left:18px;top:18px;font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.92);background:rgba(0,0,0,.55);padding:6px 10px;z-index:2;border-left:2px solid var(--red);}
+
+  .quavo-rcp{display:grid;grid-template-columns:1fr 1.2fr;gap:0;border:1px solid var(--rule-d);border-top:0;background:var(--ink);color:var(--paper);}
+  .qr-l{padding:0;background:var(--ink-2);min-height:340px;position:relative;overflow:hidden;}
+  .qr-l img{width:100%;height:100%;object-fit:cover;object-position:center 25%;display:block;}
+  .qr-r{padding:48px;}
+  .qr-r .eye{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-bottom:18px;}
+  .qr-r h3{font-family:'Anton',sans-serif;font-size:44px;line-height:.95;text-transform:uppercase;margin-bottom:20px;color:#fff;}
+  .qr-r p{font-size:15px;line-height:1.65;color:rgba(244,239,230,.82);max-width:540px;}
+  .qr-r p + p{margin-top:14px;}
+
+  /* ---------- 05 — WHY HIBBETT ---------- */
+  .pillars{display:grid;grid-template-columns:1fr;gap:0;border-top:1px solid var(--rule);}
+  .pillar{display:grid;grid-template-columns:140px 1.1fr 1.4fr;gap:48px;padding:36px 0;border-bottom:1px solid var(--rule);align-items:start;}
+  .pillar .ix{font-family:'Anton',sans-serif;font-size:64px;line-height:.85;color:var(--red);}
+  .pillar h4{font-family:'Anton',sans-serif;font-size:32px;line-height:.95;text-transform:uppercase;margin-bottom:6px;}
+  .pillar .sub{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);}
+  .pillar .body{font-size:15.5px;line-height:1.65;color:#2a2a2d;}
+  .pillar .body strong{color:var(--ink);}
+
+  /* ---------- 06 — CAMPAIGN ---------- */
+  .camp-hero{background:var(--red);color:#fff;padding:64px 56px;border:1px solid #b21422;position:relative;overflow:hidden;}
+  .camp-hero::after{content:'';position:absolute;right:-80px;top:-80px;width:340px;height:340px;border:24px solid rgba(255,255,255,.12);border-radius:50%;}
+  .camp-eye{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.78);margin-bottom:18px;}
+  .camp-name{font-family:'Anton',sans-serif;font-size:128px;line-height:.85;letter-spacing:.5px;text-transform:uppercase;margin-bottom:18px;position:relative;z-index:2;}
+  .camp-name .small{font-family:'Archivo Narrow',sans-serif;font-style:italic;font-weight:500;font-size:38px;letter-spacing:0;display:block;color:rgba(255,255,255,.85);text-transform:none;margin-top:8px;}
+  .camp-lede{font-size:19px;line-height:1.55;max-width:760px;position:relative;z-index:2;}
+  .camp-lede strong{color:#fff;}
+
+  .camp-modules{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--rule);border-top:0;}
+  .cm{padding:38px 32px;border-right:1px solid var(--rule);background:var(--paper);}
+  .cm:last-child{border-right:0;}
+  .cm .n{font-family:'Anton',sans-serif;font-size:84px;line-height:.85;color:var(--red);}
+  .cm .step{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin:18px 0 10px;}
+  .cm h4{font-family:'Anton',sans-serif;font-size:28px;line-height:1;text-transform:uppercase;margin-bottom:14px;}
+  .cm p{font-size:14.5px;line-height:1.65;color:#2a2a2d;}
+  .cm p strong{color:var(--ink);}
+  .cm ul{list-style:none;margin-top:12px;}
+  .cm ul li{position:relative;padding-left:18px;font-size:13.5px;line-height:1.55;color:#2a2a2d;margin-top:6px;}
+  .cm ul li::before{content:'';position:absolute;left:0;top:8px;width:8px;height:2px;background:var(--red);}
+
+  .camp-deliver{margin-top:0;background:var(--ink);color:var(--paper);padding:48px 40px;display:grid;grid-template-columns:280px 1fr 1fr;gap:32px;align-items:start;}
+  .camp-deliver h5{font-family:'Anton',sans-serif;font-size:30px;line-height:.95;text-transform:uppercase;}
+  .camp-deliver .eye{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-bottom:10px;}
+  .deliv{}
+  .deliv .k{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(244,239,230,.55);margin-bottom:10px;}
+  .deliv .v{font-size:14.5px;line-height:1.6;color:rgba(244,239,230,.88);}
+  .deliv .v strong{color:#fff;}
+  .deliv ul{list-style:none;margin-top:6px;}
+  .deliv ul li{position:relative;padding-left:18px;margin-top:6px;}
+  .deliv ul li::before{content:'';position:absolute;left:0;top:9px;width:8px;height:2px;background:var(--red);}
+
+  /* ---------- 07 — ASK ---------- */
+  .ask-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--rule-d);}
+  .ask-l{padding:56px 48px;background:var(--ink);color:var(--paper);border-right:1px solid var(--rule-d);}
+  .ask-r{padding:0;background:var(--ink-2);display:grid;grid-template-rows:1fr 1fr;}
+  .ask-r .cell{padding:36px 40px;border-bottom:1px solid var(--rule-d);}
+  .ask-r .cell:last-child{border-bottom:0;}
+  .ask-num{font-family:'Anton',sans-serif;font-size:148px;line-height:.85;color:#fff;}
+  .ask-num .u{color:var(--red);font-size:44px;}
+  .ask-l .eye{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-bottom:18px;}
+  .ask-l h3{font-family:'Anton',sans-serif;font-size:54px;line-height:.92;text-transform:uppercase;margin:18px 0 18px;}
+  .ask-l p{font-size:15.5px;line-height:1.65;color:rgba(244,239,230,.85);max-width:520px;}
+  .ask-r .lab{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-bottom:8px;}
+  .ask-r h4{font-family:'Anton',sans-serif;font-size:28px;line-height:1;text-transform:uppercase;margin-bottom:16px;color:#fff;}
+  .ask-r ul{list-style:none;}
+  .ask-r ul li{position:relative;padding-left:20px;font-size:14px;line-height:1.6;color:rgba(244,239,230,.82);margin-bottom:6px;}
+  .ask-r ul li::before{content:'';position:absolute;left:0;top:10px;width:10px;height:2px;background:var(--red);}
+  .ask-r ul li strong{color:#fff;}
+
+  /* ---------- TIERS (3-up sponsor packages) ---------- */
+  .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--rule-d);}
+  .tier{position:relative;background:var(--ink-2);padding:42px 32px 36px;border-right:1px solid var(--rule-d);color:var(--paper);}
+  .tier:last-child{border-right:0;}
+  .tier.rec{background:var(--red);color:#fff;}
+  .tier-rec-flag{position:absolute;top:-1px;right:24px;background:#fff;color:var(--red);padding:6px 12px;font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:2px;text-transform:uppercase;font-weight:700;}
+  .tier-no{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-bottom:14px;}
+  .tier.rec .tier-no{color:rgba(255,255,255,.85);}
+  .tier-name{font-family:'Anton',sans-serif;font-size:34px;line-height:.95;letter-spacing:.5px;text-transform:uppercase;color:#fff;margin-bottom:10px;}
+  .tier-tag{font-family:'Archivo Narrow',sans-serif;font-style:italic;font-size:14.5px;line-height:1.45;color:rgba(244,239,230,.72);margin-bottom:26px;}
+  .tier.rec .tier-tag{color:rgba(255,255,255,.88);}
+  .tier-price{font-family:'Anton',sans-serif;font-size:88px;line-height:.85;color:#fff;margin-bottom:6px;}
+  .tier-price .pre{font-size:32px;color:var(--red);vertical-align:24px;margin-right:4px;}
+  .tier.rec .tier-price .pre{color:#fff;}
+  .tier-per{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(244,239,230,.55);margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid rgba(244,239,230,.18);}
+  .tier.rec .tier-per{color:rgba(255,255,255,.75);border-bottom-color:rgba(255,255,255,.28);}
+  .tier-incl-l{font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-bottom:14px;}
+  .tier.rec .tier-incl-l{color:#fff;}
+  .tier ul{list-style:none;}
+  .tier ul li{position:relative;padding-left:20px;font-size:14px;line-height:1.55;color:rgba(244,239,230,.85);margin-bottom:9px;}
+  .tier ul li::before{content:'';position:absolute;left:0;top:9px;width:10px;height:2px;background:var(--red);}
+  .tier.rec ul li{color:rgba(255,255,255,.95);}
+  .tier.rec ul li::before{background:#fff;}
+  .tier ul li strong{color:#fff;font-weight:700;}
+
+  /* ---------- PRODUCT MOMENTS (Hibbett SKU activations strip) ---------- */
+  .prod-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--rule);}
+  .prod-cell{padding:32px 24px;border-right:1px solid var(--rule);background:var(--paper);position:relative;}
+  .prod-cell:last-child{border-right:0;}
+  .prod-cell .icon{width:44px;height:44px;border:2px solid var(--red);display:flex;align-items:center;justify-content:center;font-family:'Anton',sans-serif;font-size:22px;color:var(--red);margin-bottom:18px;background:#fff;}
+  .prod-cell .tag{font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:8px;}
+  .prod-cell h4{font-family:'Anton',sans-serif;font-size:22px;line-height:1;text-transform:uppercase;margin-bottom:10px;}
+  .prod-cell p{font-size:13.5px;line-height:1.55;color:#2a2a2d;}
+  .prod-cell p strong{color:var(--ink);}
+
+  /* ---------- 08 — CLOSE ---------- */
+  .close-hero{background:var(--ink);color:var(--paper);padding:120px 56px;text-align:center;border-top:1px solid var(--rule-d);}
+  .close-eye{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--red);margin-bottom:30px;}
+  .close-title{font-family:'Anton',sans-serif;font-size:152px;line-height:.85;letter-spacing:.5px;text-transform:uppercase;color:#fff;max-width:1100px;margin:0 auto 28px;}
+  .close-title .em{color:var(--red);}
+  .close-title .ital{font-family:'Archivo Narrow',sans-serif;font-style:italic;font-weight:500;text-transform:none;letter-spacing:0;font-size:64px;display:block;color:rgba(244,239,230,.78);margin-top:14px;}
+  .close-meta{font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:rgba(244,239,230,.55);margin-top:36px;}
+  .close-meta a{color:#fff;text-decoration:none;border-bottom:1px solid var(--red);}
+
+  footer{background:var(--ink);color:rgba(244,239,230,.55);padding:24px 56px;display:flex;justify-content:space-between;align-items:center;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;border-top:1px solid #2a2a2d;}
+  footer .x{color:var(--red);margin:0 6px;}
+
+  /* ---------- MOBILE ---------- */
+  @media (max-width:900px){
+    section, .cover, .cover-grid, .cover-left, .cover-right, .wrap, .views-hero, .breakdown, .nike-row, .quavo-rcp, .ask-grid, .tiers, .camp-hero, .camp-modules, .camp-deliver, .ledger, .demo-row, .demo-overlay, .why-grid, .prod-strip, .frontmatter, .topbar, .close-hero, footer{max-width:100%;overflow-x:hidden;}
+    .cover-title, .sec-title, .cr-headline, .close-title, .camp-name, .nike-h, .vh-l .big, .demo-overlay .big, .qr-r h3, .vh-r .head, .why-cell h3, .pillar h4, .cm h4, .tier-name, .ask-l h3, .bd-title, .prod-cell h4, .demo-cell .ttl, .ask-r h4, .camp-deliver h5{word-break:break-word;overflow-wrap:anywhere;hyphens:auto;}
+    .nike-r img, .qr-l img{width:100%;height:auto;}
+    .ledger, .nike-facts{overflow:hidden;}
+    section{padding:64px 0;}
+    .wrap{padding:0 22px;}
+
+    /* topbar */
+    .tb-inner{padding:12px 22px;gap:12px;flex-wrap:wrap;}
+    .tb-mark{font-size:17px;letter-spacing:1px;}
+    .tb-meta{gap:10px;font-size:9px;flex-wrap:wrap;}
+    .tb-meta span{white-space:nowrap;}
+
+    /* cover */
+    .cover-band-inner{font-size:13px;letter-spacing:2px;gap:28px;animation-duration:30s;}
+    .cover-band-inner span{gap:28px;}
+    .cover-grid{grid-template-columns:1fr;}
+    .cover-left{padding:48px 22px 40px;border-right:0;border-bottom:1px solid var(--rule);}
+    .cover-eye{flex-wrap:wrap;gap:8px;margin-bottom:28px;}
+    .cover-title{font-size:58px;line-height:.9;margin-bottom:22px;}
+    .cover-title .l3{font-size:22px;margin-top:10px;line-height:1.2;}
+    .cover-lede{font-size:15.5px;margin-bottom:24px;}
+    .cover-cta{gap:10px;}
+    .btn-red,.btn-ghost{padding:12px 16px;font-size:10px;letter-spacing:1.5px;}
+
+    .cover-right{padding:44px 22px;}
+    .cr-headline{font-size:38px;}
+    .cr-stats{margin-top:28px;}
+    .cr-row{grid-template-columns:96px 1fr;gap:14px;padding:14px 0 12px;}
+    .cr-row .n{font-size:40px;}
+    .cr-row .n .u{font-size:17px;}
+    .cr-row .k{font-size:12.5px;}
+    .cr-row .k .sub{font-size:8.5px;}
+
+    .frontmatter{grid-template-columns:1fr 1fr;}
+    .fm-cell{padding:20px 22px;}
+    .fm-cell:nth-child(odd){border-right:1px solid var(--rule);}
+    .fm-cell:nth-child(even){border-right:0;}
+    .fm-cell:nth-child(-n+2){border-bottom:1px solid var(--rule);}
+    .fm-v{font-size:13px;}
+
+    /* section heads */
+    .sec-hd{grid-template-columns:1fr;gap:14px;margin-bottom:36px;}
+    .sec-num{font-size:72px;}
+    .sec-title{font-size:34px;line-height:.95;}
+    .sec-lede{font-size:14.5px;margin-top:18px;}
+    .sec-label{font-size:10px;letter-spacing:1.8px;margin-bottom:8px;}
+
+    /* 01 opportunity */
+    .why-grid{grid-template-columns:1fr;}
+    .why-cell{padding:32px 24px;border-right:0;border-bottom:1px solid var(--rule);}
+    .why-cell:last-child{border-bottom:0;}
+    .why-cell h3{font-size:26px;}
+    .why-cell p{font-size:14px;}
+
+    .ledger{grid-template-columns:1fr 1fr;}
+    .ledger .cell{padding:28px 20px;border-right:1px solid rgba(244,239,230,.12);}
+    .ledger .cell:nth-child(even){border-right:0;}
+    .ledger .cell:nth-child(-n+2){border-bottom:1px solid rgba(244,239,230,.12);}
+    .ledger .n{font-size:48px;}
+    .ledger .n .u{font-size:22px;}
+    .ledger .b{font-size:12px;}
+
+    /* 02 social — views hero + breakdown */
+    .views-hero{grid-template-columns:1fr;}
+    .vh-l{padding:36px 24px;}
+    .vh-l .big{font-size:108px;}
+    .vh-l .big .u{font-size:54px;}
+    .vh-l .body{font-size:14px;}
+    .vh-r{padding:32px 24px;}
+    .vh-r .head{font-size:32px;}
+    .vh-r .sub{font-size:13.5px;}
+
+    .breakdown{grid-template-columns:1fr;}
+    .bd-l{border-right:0;border-bottom:1px solid var(--rule);}
+    .bd-l,.bd-r{padding:32px 24px;}
+    .bd-title{font-size:24px;}
+
+    /* 03 demographics */
+    .demo-row{grid-template-columns:1fr;}
+    .demo-cell{padding:28px 22px;border-right:0;border-bottom:1px solid var(--rule);}
+    .demo-cell:last-child{border-bottom:0;}
+    .demo-overlay{grid-template-columns:1fr;gap:20px;padding:36px 24px;}
+    .demo-overlay .big{font-size:88px;}
+    .demo-overlay h4{font-size:26px;}
+    .demo-overlay p{font-size:14px;}
+
+    /* 04 nike detail */
+    .nike-row{grid-template-columns:1fr;}
+    .nike-l{padding:36px 24px;}
+    .nike-h{font-size:38px;}
+    .nike-body{font-size:14px;}
+    .nike-r{min-height:280px;}
+    .nike-facts{grid-template-columns:1fr;}
+    .nike-fact{padding:14px 0!important;border-right:0!important;padding-right:0!important;padding-left:0!important;}
+    .nike-fact .v{font-size:13.5px;}
+
+    .quavo-rcp{grid-template-columns:1fr;}
+    .qr-l{min-height:260px;}
+    .qr-r{padding:32px 24px;}
+    .qr-r h3{font-size:28px;}
+    .qr-r p{font-size:14px;}
+
+    /* 05 pillars */
+    .pillar{grid-template-columns:1fr;gap:14px;padding:24px 0;}
+    .pillar .ix{font-size:42px;}
+    .pillar h4{font-size:24px;}
+    .pillar .body{font-size:14px;}
+
+    /* product strip (Hibbett moments) */
+    .prod-strip{grid-template-columns:1fr 1fr;}
+    .prod-cell{padding:22px 18px;border-right:1px solid var(--rule);}
+    .prod-cell:nth-child(even){border-right:0;}
+    .prod-cell:nth-child(-n+2){border-bottom:1px solid var(--rule);}
+    .prod-cell h4{font-size:18px;}
+    .prod-cell p{font-size:12.5px;}
+
+    /* 06 campaign */
+    .camp-hero{padding:36px 24px;}
+    .camp-name{font-size:54px;}
+    .camp-name .small{font-size:20px;}
+    .camp-lede{font-size:15px;}
+    .camp-modules{grid-template-columns:1fr;}
+    .cm{padding:28px 22px;border-right:0;border-bottom:1px solid var(--rule);}
+    .cm:last-child{border-bottom:0;}
+    .cm .n{font-size:60px;}
+    .cm h4{font-size:24px;}
+    .camp-deliver{grid-template-columns:1fr;gap:20px;padding:32px 24px;}
+    .camp-deliver h5{font-size:24px;}
+
+    /* 07 tiers */
+    .tiers{grid-template-columns:1fr;}
+    .tier{padding:32px 24px 28px;border-right:0;border-bottom:1px solid var(--rule-d);}
+    .tier:last-child{border-bottom:0;}
+    .tier-name{font-size:28px;}
+    .tier-price{font-size:64px;}
+    .tier-price .pre{font-size:24px;vertical-align:16px;}
+
+    .ask-grid{grid-template-columns:1fr;}
+    .ask-l{padding:36px 24px;border-right:0;border-bottom:1px solid var(--rule-d);}
+    .ask-num{font-size:96px;}
+    .ask-num .u{font-size:30px;}
+    .ask-l h3{font-size:32px;}
+    .ask-r .cell{padding:28px 24px;}
+    .ask-r h4{font-size:22px;}
+
+    /* 08 close */
+    .close-hero{padding:72px 22px;}
+    .close-title{font-size:48px;}
+    .close-title .ital{font-size:24px;}
+    .close-meta{font-size:9.5px;letter-spacing:1.5px;}
+
+    footer{flex-direction:column;align-items:flex-start;gap:6px;padding:20px 22px;font-size:9px;text-align:left;}
+  }
+
+  @media (max-width:480px){
+    .cover-title{font-size:46px;}
+    .sec-title{font-size:28px;}
+    .cr-headline{font-size:32px;}
+    .cr-row{grid-template-columns:84px 1fr;}
+    .cr-row .n{font-size:34px;}
+    .close-title{font-size:38px;}
+    .close-title .ital{font-size:20px;}
+    .prod-strip{grid-template-columns:1fr;}
+    .prod-cell{border-right:0!important;border-bottom:1px solid var(--rule)!important;}
+    .prod-cell:last-child{border-bottom:0!important;}
+  }
+
+  /* ---------- print ---------- */
+  @media print{
+    .topbar{display:none}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<header class="topbar">
+  <div class="tb-inner">
+    <div class="tb-mark"><span class="hb"><b></b>UNFAZED</span><span class="x">×</span><span class="hb"><b style="background:#fff"></b>HIBBETT</span></div>
+    <div class="tb-meta">
+      <span>DOC-26.05</span>
+      <span>Partnership Brief</span>
+      <span class="live">LIVE OPPORTUNITY</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ COVER ============ -->
+<section class="cover">
+  <div class="cover-band" aria-hidden="true">
+    <div class="cover-band-inner">
+      <span>HIBBETT, JOIN THE PARTY</span><span>STUDIO FLEECE SZN</span><span>HOSTED BY QUAVO</span><span>AUG 29 · THE FOUNDRY · ATL</span><span>STREETWEAR · LIVE FROM ATL</span><span>3,000 IN THE ROOM · 6M ONLINE</span>
+      <span>HIBBETT, JOIN THE PARTY</span><span>STUDIO FLEECE SZN</span><span>HOSTED BY QUAVO</span><span>AUG 29 · THE FOUNDRY · ATL</span><span>STREETWEAR · LIVE FROM ATL</span><span>3,000 IN THE ROOM · 6M ONLINE</span>
+    </div>
+  </div>
+
+  <div class="cover-grid">
+    <div class="cover-left">
+      <div class="cover-eye">
+        <span class="doc">DOC-26.05 · Partnership Brief</span>
+        <span class="tag">● Prepared for Hibbett Sports</span>
+      </div>
+      <h1 class="cover-title">
+        <span class="l1">Hibbett,</span>
+        <span class="l2">join the party.</span>
+        <span class="l3">Atlanta's loudest streetwear stage — Aug 29. We're holding a seat at the front.</span>
+      </h1>
+      <p class="cover-lede">
+        On <strong>August 29, 2026</strong>, Nike drops its <em>Studio Fleece</em> collection inside the Unfazed Exhibit at The Foundry in Atlanta — hosted by <strong>Quavo</strong>, designed by five female ATL creators, witnessed by 3,000 of the most drop-aware Gen Z consumers in the South. <strong>This is the perfect sponsorship — and the perfect partnership — for Hibbett, Nike &amp; Unfazed.</strong>
+      </p>
+      <div class="cover-cta">
+        <a href="#campaign" class="btn-red">See the campaign idea</a>
+        <a href="#ask" class="btn-ghost">Skip to the ask</a>
+      </div>
+    </div>
+
+    <div class="cover-right">
+      <div class="cr-eye">By the numbers — Unfazed Exhibit</div>
+      <h2 class="cr-headline">
+        21 sold-out<br>
+        editions.<br>
+        <span class="em">6M+</span> views<br>
+        per night.
+      </h2>
+      <div class="cr-stats">
+        <div class="cr-row">
+          <div class="n">312<span class="u">K</span></div>
+          <div class="k">Reached per edition<span class="sub">IG Insights · prior editions</span></div>
+        </div>
+        <div class="cr-row">
+          <div class="n">6<span class="u">M+</span></div>
+          <div class="k">Combined social views<span class="sub">Cross-platform · organic only</span></div>
+        </div>
+        <div class="cr-row">
+          <div class="n">87.5<span class="u">%</span></div>
+          <div class="k">Audience aged 18–34<span class="sub">Gen Z + young millennial</span></div>
+        </div>
+        <div class="cr-row">
+          <div class="n">86.2<span class="u">%</span></div>
+          <div class="k">Reach from non-followers<span class="sub">True algorithmic discovery</span></div>
+        </div>
+        <div class="cr-row">
+          <div class="n">14<span class="u">M</span></div>
+          <div class="k">Average host following<span class="sub">Quavo on Aug 29</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="frontmatter">
+    <div class="fm-cell"><div class="fm-k">Prepared For</div><div class="fm-v">Hibbett Sports — Brand Partnerships</div></div>
+    <div class="fm-cell"><div class="fm-k">Prepared By</div><div class="fm-v">Unfazed Exhibit · Atlanta, GA</div></div>
+    <div class="fm-cell"><div class="fm-k">Contact</div><div class="fm-v">labaron@unfazedexhibit.com<br>partners@unfazedexhibit.com</div></div>
+    <div class="fm-cell"><div class="fm-k">Event</div><div class="fm-v">Aug 29, 2026 · The Foundry, ATL</div></div>
+  </div>
+</section>
+
+<!-- ============ 01 — THE OPPORTUNITY ============ -->
+<section id="opportunity">
+  <div class="wrap">
+    <div class="sec-hd">
+      <div class="sec-num">01</div>
+      <div>
+        <div class="sec-label">Why Hibbett · Why Unfazed</div>
+        <h2 class="sec-title">Unfazed is the room Hibbett's customer is already in. We want Hibbett in it.</h2>
+        <p class="sec-lede">
+          Unfazed Exhibit is Atlanta's most-watched streetwear platform — 21 sold-out editions, 6M+ views per night, 3,000 of the Southeast's most drop-aware Gen Z consumers on the floor. <strong>That's not a Hibbett-adjacent audience. That's the Hibbett audience.</strong> This is a partnership invitation: Hibbett as the hometown Southeast retailer, Unfazed as the cultural room, both growing the same Atlanta Gen Z together.
+        </p>
+      </div>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-cell">
+        <div class="n">01 · SHARED CITY</div>
+        <h3>Hibbett and Unfazed are both built in Atlanta's backyard.</h3>
+        <p>Unfazed is Atlanta-born; Hibbett is Birmingham-HQ’d with the densest Southeast retail footprint in the category. <strong>Atlanta is both brands' home turf.</strong> A partnership reads like two hometown brands linking — not a corporate sponsorship dropped in from out of town.</p>
+      </div>
+      <div class="why-cell">
+        <div class="n">02 · SHARED CUSTOMER</div>
+        <h3>The Unfazed floor is the Hibbett customer, dressed up.</h3>
+        <p>Gen Z, Southeast, drop-aware, streetwear-fluent. <strong>Hibbett owns the lobby</strong> as 3,000 of these consumers walk in — every guest passes through a Hibbett-branded space before they hit the floor. That's a brand impression Hibbett can't manufacture inside its own stores.</p>
+      </div>
+      <div class="why-cell">
+        <div class="n">03 · SHARED UPSIDE</div>
+        <h3>Hibbett gets content the algorithm rewards.</h3>
+        <p>Unfazed editions clock <strong>6M+ organic views with 86.2% non-follower reach</strong>. A Hibbett lobby inside that machine doesn't just get "seen" — it gets <em>discovered</em> by net-new Gen Z consumers Hibbett's paid channels can't reach. <strong>Owned distribution, no media buy.</strong></p>
+      </div>
+    </div>
+
+    <div class="ledger" style="margin-top:48px;">
+      <div class="cell">
+        <div class="n">3,000</div>
+        <div class="k">In-room attendees</div>
+        <div class="b">Sold-out floor at The Foundry at Puritan Mill — vetted, drop-aware ATL Gen Z + influencers.</div>
+      </div>
+      <div class="cell">
+        <div class="n">312<span class="u">K</span></div>
+        <div class="k">Reached per edition</div>
+        <div class="b">IG Insights, prior 6 sold-out editions. <strong>86.2% non-follower reach</strong> — true discovery.</div>
+      </div>
+      <div class="cell">
+        <div class="n">6<span class="u">M+</span></div>
+        <div class="k">Combined social views</div>
+        <div class="b">Stacked across host + attendees + co-marketing partners. <strong>Owned distribution — no paid lift.</strong></div>
+      </div>
+      <div class="cell">
+        <div class="n">14<span class="u">M</span></div>
+        <div class="k">Quavo's IG following</div>
+        <div class="b">He's already <strong>personally reposted</strong> the flyer to his story. The host doesn't get paid — he treats it as his night.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 — SOCIAL ============ -->
+<section id="social" class="dark">
+  <div class="wrap">
+    <div class="sec-hd">
+      <div class="sec-num">02</div>
+      <div>
+        <div class="sec-label">The Social Footprint · Why the views matter to Hibbett</div>
+        <h2 class="sec-title">Unfazed isn't an event. It's a content engine — and the algorithm loves it.</h2>
+        <p class="sec-lede">
+          A retail brand at Unfazed isn't sponsoring a Saturday night. It's <strong>buying inventory inside an organic earned-media machine</strong> that has clocked <em>millions of impressions per edition with zero paid amplification.</em>
+        </p>
+      </div>
+    </div>
+
+    <div class="views-hero">
+      <div class="vh-l">
+        <div class="big">6<span class="u">M+</span></div>
+        <div class="cap">Per-edition social impressions (avg.) · Cross-platform</div>
+        <p class="body">
+          Combined organic reach across the host, the in-room attendee feed, partner brand content and creator coverage. Most editions clear <strong>4–6M before any partner activates</strong>; Quavo's edition is tracking higher. <strong>86.2% of all reach comes from non-followers</strong> — the IG/TikTok algorithm pushes Unfazed to net-new audiences every time.
+        </p>
+      </div>
+      <div class="vh-r">
+        <div class="eye">The receipt</div>
+        <div class="head">Discovery, not impressions.</div>
+        <div class="sub">
+          86.2% of the people seeing Unfazed content <strong>do not follow Unfazed</strong>. They're being shown the room by the algorithm because the content over-indexes on engagement. For a retailer, that's net-new Gen Z eyeballs — the cohort you can't buy with a Facebook media plan.
+        </div>
+      </div>
+    </div>
+
+    <div class="breakdown">
+      <div class="bd-l">
+        <div class="bd-title">Where the views come from</div>
+        <div class="bd-sub">Per-edition reach by channel · IG Insights composite</div>
+        <div class="bar-row full"><div class="meta"><div class="name">Host story + grid (Quavo @ 14M followers)</div><div class="pct">42%</div></div><div class="bar-wrap"><div class="bar-fill" style="width:42%"></div></div></div>
+        <div class="bar-row full"><div class="meta"><div class="name">Attendee in-room content (3K floor)</div><div class="pct">28%</div></div><div class="bar-wrap"><div class="bar-fill" style="width:28%"></div></div></div>
+        <div class="bar-row full"><div class="meta"><div class="name">Co-host creator / YouTuber coverage</div><div class="pct">18%</div></div><div class="bar-wrap"><div class="bar-fill" style="width:18%"></div></div></div>
+        <div class="bar-row full"><div class="meta"><div class="name">Unfazed owned channels (@unfazedexhibit)</div><div class="pct">8%</div></div><div class="bar-wrap"><div class="bar-fill" style="width:8%"></div></div></div>
+        <div class="bar-row full"><div class="meta"><div class="name">Partner brand handles + press</div><div class="pct">4%</div></div><div class="bar-wrap"><div class="bar-fill" style="width:4%"></div></div></div>
+      </div>
+      <div class="bd-r">
+        <div class="bd-title">What Hibbett rides on</div>
+        <div class="bd-sub">Net-new earned reach for the brand · Modeled vs. prior editions</div>
+        <div class="bar-row full"><div class="meta"><div class="name">Hibbett-tagged host posts (Quavo)</div><div class="pct">≈ 2.1M</div></div><div class="bar-wrap"><div class="bar-fill" style="width:80%"></div></div></div>
+        <div class="bar-row full"><div class="meta"><div class="name">Hibbett activation footage shared by attendees</div><div class="pct">≈ 1.4M</div></div><div class="bar-wrap"><div class="bar-fill" style="width:62%"></div></div></div>
+        <div class="bar-row full"><div class="meta"><div class="name">TikTok pickup on the "Hibbett Hot Drop" wall</div><div class="pct">≈ 800K</div></div><div class="bar-wrap"><div class="bar-fill" style="width:42%"></div></div></div>
+        <div class="bar-row full"><div class="meta"><div class="name">Co-billing on Unfazed + Nike recaps</div><div class="pct">≈ 600K</div></div><div class="bar-wrap"><div class="bar-fill" style="width:32%"></div></div></div>
+        <div class="bar-row full"><div class="meta"><div class="name">Partner / press / podcast pickup</div><div class="pct">≈ 250K</div></div><div class="bar-wrap"><div class="bar-fill" style="width:14%"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 — DEMOGRAPHICS ============ -->
+<section id="demographics">
+  <div class="wrap">
+    <div class="sec-hd">
+      <div class="sec-num">03</div>
+      <div>
+        <div class="sec-label">Audience Overlay · Who is actually in this room</div>
+        <h2 class="sec-title">Hibbett's most-wanted consumer, in one ZIP code, on one Saturday.</h2>
+        <p class="sec-lede">
+          We are not selling proximity. We are selling <strong>population overlap</strong>. The Unfazed audience — documented through three years of IG Insights and ticketing data — maps almost <em>one to one</em> onto the Gen Z + young-millennial customer Hibbett's core stores are built for.
+        </p>
+      </div>
+    </div>
+
+    <div class="demo-row">
+      <div class="demo-cell">
+        <div class="src">Audience composition · IG Insights, 312K reached</div>
+        <div class="ttl">Age</div>
+        <div class="demo-line"><span class="k">18–24</span><span class="v">49.3%</span></div>
+        <div class="demo-line"><span class="k">25–34</span><span class="v">38.2%</span></div>
+        <div class="demo-line"><span class="k">35–44</span><span class="v">9.1%</span></div>
+        <div class="demo-line"><span class="k">13–17</span><span class="v">2.6%</span></div>
+        <div class="demo-line"><span class="k">45+</span><span class="v">0.8%</span></div>
+      </div>
+      <div class="demo-cell">
+        <div class="src">In-room attendee mix · Ticketing + RSVP data</div>
+        <div class="ttl">Identity & Behavior</div>
+        <div class="demo-line"><span class="k">Identifies sneaker-first</span><span class="v">71%</span></div>
+        <div class="demo-line"><span class="k">Bought a Nike SKU in 90 days</span><span class="v">64%</span></div>
+        <div class="demo-line"><span class="k">Drop-aware / SNKRS user</span><span class="v">58%</span></div>
+        <div class="demo-line"><span class="k">Atlanta-metro resident</span><span class="v">82%</span></div>
+        <div class="demo-line"><span class="k">Female-identifying</span><span class="v">46%</span></div>
+      </div>
+      <div class="demo-cell">
+        <div class="src">Channel · Where they live online</div>
+        <div class="ttl">Channel & Spend</div>
+        <div class="demo-line"><span class="k">IG · daily user</span><span class="v">94%</span></div>
+        <div class="demo-line"><span class="k">TikTok · daily user</span><span class="v">88%</span></div>
+        <div class="demo-line"><span class="k">YouTube · weekly</span><span class="v">79%</span></div>
+        <div class="demo-line"><span class="k">Shops athletic / streetwear monthly</span><span class="v">68%</span></div>
+        <div class="demo-line"><span class="k">Shops mall + DTC blend</span><span class="v">61%</span></div>
+      </div>
+    </div>
+
+    <div class="demo-overlay">
+      <div class="big">1:1</div>
+      <div>
+        <h4>The overlap is not approximation. It's identity.</h4>
+        <p>If you mapped Hibbett's "core mall-shopper Gen Z customer" persona against the Unfazed attendee dataset, the two profiles are statistically indistinguishable on age, channel, brand affinity, drop literacy and category spend. <strong>You are not buying access to a new audience. You are buying a louder microphone inside the audience you already serve.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 — THE NIKE DETAIL ============ -->
+<section id="nike" class="dark">
+  <div class="wrap">
+    <div class="sec-hd">
+      <div class="sec-num">04</div>
+      <div>
+        <div class="sec-label">The Nike Detail · Why this isn't just an Unfazed event</div>
+        <h2 class="sec-title">Nike is in the building. Studio Fleece is the launch. Hibbett can be the retail story.</h2>
+        <p class="sec-lede">
+          The Aug 29 edition is the <strong>Studio Fleece season-opener for Nike</strong> — the first major Atlanta moment for the silhouette, programmed in lockstep with Nike Sports Marketing + Jordan Brand ATL. The activation has the host (Quavo), the designers (5 female ATL creators) and the venue (The Foundry) locked. <em>The retailer slot is still open.</em>
+        </p>
+      </div>
+    </div>
+
+    <div class="nike-row">
+      <div class="nike-l">
+        <div class="nike-tag">● Nike × Unfazed · Confirmed</div>
+        <h3 class="nike-h">Studio Fleece, dropped <span class="em">in the Unfazed room.</span></h3>
+        <p class="nike-body">
+          Five female designers from Atlanta each receive <strong>20 Studio Fleece pieces</strong> from Nike with one creative directive: make it your own. On Aug 29 at The Foundry, each designer takes a <strong>complimentary vendor booth</strong> on the Unfazed floor to present their 20 one-of-one pieces to 3,000 of ATL's most drop-aware consumers. <strong>Nigel Xavier</strong> selects a $5K grand-prize winner. The drop, the room, the host and the press are all in motion.
+        </p>
+        <p class="nike-body">
+          This is the activation Nike is putting behind <strong>Jordan Brand-adjacent Gen Z storytelling in ATL</strong>. It's the kind of moment that previously seeded SNKRS exclusives. Hibbett — as the Nike-anchored retailer most native to Atlanta — has a natural role here that no other partner can play.
+        </p>
+        <div class="nike-facts">
+          <div class="nike-fact"><span class="k">Date</span><span class="v">Saturday · Aug 29, 2026</span></div>
+          <div class="nike-fact"><span class="k">Venue</span><span class="v">The Foundry at Puritan Mill, ATL</span></div>
+          <div class="nike-fact"><span class="k">Host</span><span class="v">Quavo (@quavohuncho · 14M)</span></div>
+          <div class="nike-fact"><span class="k">Anchor partner</span><span class="v">Nike — Studio Fleece launch</span></div>
+          <div class="nike-fact"><span class="k">Curator</span><span class="v">Nigel Xavier · selects grand prize</span></div>
+          <div class="nike-fact"><span class="k">Designers</span><span class="v">5 female ATL creators · 20 pieces ea.</span></div>
+          <div class="nike-fact"><span class="k">Capacity</span><span class="v">3,000 · sold-out room</span></div>
+          <div class="nike-fact"><span class="k">Retail slot</span><span class="v" style="color:var(--red)">OPEN — held for Hibbett</span></div>
+        </div>
+      </div>
+      <div class="nike-r">
+        <div class="flyer-cap">Official flyer · Aug 29 · The Foundry</div>
+        <img src="assets/quavo-flyer.jpeg" alt="Quavo hosts Unfazed × Nike — Studio Fleece — Aug 29 at The Foundry">
+      </div>
+    </div>
+
+    <div class="quavo-rcp">
+      <div class="qr-l">
+        <div class="flyer-cap">Receipt · @quavohuncho IG story (verified)</div>
+        <img src="assets/quavo-ig-story.jpg" alt="Quavo personally reposted the Unfazed × Nike flyer to his IG story">
+      </div>
+      <div class="qr-r">
+        <div class="eye">● Earned distribution — already in motion</div>
+        <h3>Quavo personally reposted the flyer to 14M followers.</h3>
+        <p>
+          No media spend. No agency rate card. The host is treating this edition as <strong>his own night</strong> — the way he did with prior Unfazed editions that broke 6M views. That's the asset Hibbett's logo and SKU table sit inside of when you co-anchor this event.
+        </p>
+        <p>
+          The Unfazed flywheel — host posts → algorithm pushes → 86% non-follower reach → ATL Gen Z discovers → sells out the next edition — runs whether or not Hibbett is in it. <strong>The question is whether your logo is in the receipt.</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 — WHY HIBBETT ============ -->
+<section id="why-hibbett">
+  <div class="wrap">
+    <div class="sec-hd">
+      <div class="sec-num">05</div>
+      <div>
+        <div class="sec-label">The Hibbett Case · Five reasons this is your moment</div>
+        <h2 class="sec-title">This is a Hibbett-shaped opportunity. Not a Hibbett-adjacent one.</h2>
+      </div>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar">
+        <div class="ix">01</div>
+        <div>
+          <h4>You own the Southeast Nike consumer.</h4>
+          <div class="sub">Distribution · Geography</div>
+        </div>
+        <div class="body">
+          Hibbett's store footprint is <strong>dense across exactly the metros</strong> the Unfazed attendee comes from — Atlanta, Birmingham, Charlotte, Memphis, Nashville. Every kid who screenshots a Studio Fleece look from the Aug 29 floor is <strong>three exits from a Hibbett</strong>. No other Nike retailer can say that about this room.</div>
+      </div>
+      <div class="pillar">
+        <div class="ix">02</div>
+        <div>
+          <h4>Hometown permission. National retailers can't fake it.</h4>
+          <div class="sub">Positioning · Permission</div>
+        </div>
+        <div class="body">
+          Unfazed is an <em>ATL room</em>. The crowd will read national, mall-agnostic sponsorship as marketing. They will read <strong>Hibbett</strong> as one of their own — the retailer that grew up in their Southeast malls, that <em>everybody's first pair of Js</em> came from. That permission is the rarest asset in Gen Z sneaker retail and Hibbett already has it. We're proposing you spend it.
+        </div>
+      </div>
+      <div class="pillar">
+        <div class="ix">03</div>
+        <div>
+          <h4>Content the algorithm rewards — with Hibbett in the frame.</h4>
+          <div class="sub">Content · Distribution</div>
+        </div>
+        <div class="body">
+          Unfazed's 6M+ organic per-edition views aren't a media buy — they're an outcome of the room itself. Putting Hibbett <strong>inside</strong> that room means every fit pic, every story, every recap reel runs through a Hibbett-branded backdrop. <strong>Hibbett walks out with weeks of original content shot by the algorithm's favorite Atlanta room.</strong>
+        </div>
+      </div>
+      <div class="pillar">
+        <div class="ix">04</div>
+        <div>
+          <h4>It signals to Nike where you want to grow.</h4>
+          <div class="sub">Partnership · Trade</div>
+        </div>
+        <div class="body">
+          Nike is publicly resetting around <strong>sport, athletes, and community</strong>. Hibbett showing up as the retail face of a Nike grassroots culture moment in ATL is a <em>direct signal to Nike's Sports Marketing org</em> that you are the right retail partner for the next allocations, the next exclusives, and the next regional drops.
+        </div>
+      </div>
+      <div class="pillar">
+        <div class="ix">05</div>
+        <div>
+          <h4>Gen Z female shopper — fully on stage.</h4>
+          <div class="sub">Category · Female</div>
+        </div>
+        <div class="body">
+          5 female designers. 46% female-identifying floor. Nike's category strategy is built around the Gen Z female sneaker + apparel consumer. Hibbett historically over-indexes male; <strong>this is the cleanest possible activation to credibly tell a female-customer story</strong> without inventing one.
+        </div>
+      </div>
+    </div>
+
+    <!-- Hibbett product activation strip -->
+    <div style="margin-top:72px;">
+      <div style="display:flex;justify-content:space-between;align-items:end;margin-bottom:24px;gap:24px;">
+        <div>
+          <div class="sec-label" style="margin-bottom:8px;">Hibbett product in the lobby · Eight places your SKU shows up</div>
+          <h3 style="font-family:'Anton',sans-serif;font-size:46px;line-height:.95;text-transform:uppercase;">This isn't a logo on a flyer. <span style="color:var(--red)">It's eight Hibbett-owned moments — live.</span></h3>
+        </div>
+        <div class="pill" style="color:var(--red);white-space:nowrap;"><span class="dot"></span>Built for product, not banners</div>
+      </div>
+      <div class="prod-strip">
+        <div class="prod-cell">
+          <div class="icon">01</div>
+          <div class="tag">Lobby · Entry moment</div>
+          <h4>The Hibbett Lobby takeover.</h4>
+          <p>Every one of the 3,000 guests <strong>walks through a Hibbett-branded lobby</strong> before they enter the show floor. Hibbett owns the first impression of the night — vinyl, lighting, fixtures, all Hibbett.</p>
+        </div>
+        <div class="prod-cell">
+          <div class="icon">02</div>
+          <div class="tag">Lobby · Brand wall</div>
+          <h4>The Hibbett Brand Wall.</h4>
+          <p>A curated <strong>Hibbett-owned wall</strong> in the lobby — Hibbett's own merchandising, Hibbett's voice, Hibbett's QR codes. Every photo against it is a Hibbett-branded photo. QR → Hibbett.com.</p>
+        </div>
+        <div class="prod-cell">
+          <div class="icon">03</div>
+          <div class="tag">Lobby · Fit on body</div>
+          <h4>The Hibbett Fit Check.</h4>
+          <p>Attendees step onto a <strong>Hibbett-branded riser</strong> in the lobby and get photographed in their fits. Every shot drops to a 9:16 edit, Hibbett-tagged, AirDropped to the attendee instantly.</p>
+        </div>
+        <div class="prod-cell">
+          <div class="icon">04</div>
+          <div class="tag">Lobby · Sneaker wall</div>
+          <h4>The Hibbett Sneaker Wall.</h4>
+          <p>A second wall of <strong>basketball + lifestyle sneakers</strong> Hibbett wants on Gen Z radar — Jordan, Nike Dunk, KD, Sabrina, GT Cut. Curated to complement the streetwear fits in the room.</p>
+        </div>
+      </div>
+      <div class="prod-strip" style="border-top:0;">
+        <div class="prod-cell">
+          <div class="icon">05</div>
+          <div class="tag">Lobby · Hot Drop Wall</div>
+          <h4>The #HibbettFitCheck Wall.</h4>
+          <p>A <strong>real-time projection wall</strong> in the lobby — every fit photo tagged <strong>#HibbettFitCheck</strong> goes up live. The wall becomes the content; attendees post videos <em>of the wall posting them.</em></p>
+        </div>
+        <div class="prod-cell">
+          <div class="icon">06</div>
+          <div class="tag">Post · Atlanta circuit</div>
+          <h4>The Hibbett ATL store tour.</h4>
+          <p>Every Hibbett store across <strong>metro Atlanta + the Southeast</strong> runs an event-recap end-cap and loop Sep → Oct — the fits, faces, and creators from the lobby become the in-store window for shoppers walking past.</p>.</p>
+        </div>
+        <div class="prod-cell">
+          <div class="icon">07</div>
+          <div class="tag">Digital · PDP</div>
+          <h4>Hibbett.com hero loop.</h4>
+          <p>The Hibbett-owned landing page runs a <strong>hero video shot live</strong> in the Hibbett lobby — ATL Gen Z, real fits, the brand wall, the riser. 6-week run.</p>
+        </div>
+        <div class="prod-cell">
+          <div class="icon">08</div>
+          <div class="tag">Owned · Hibbett Champions</div>
+          <h4>5 ATL creators on retainer.</h4>
+          <p>Five ATL Gen Z creators captured in the Hibbett lobby go on <strong>a 90-day Hibbett retainer</strong> through NBA tip-off — Hibbett fits, Hibbett SKUs, Hibbett channels.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hibbett ATL footprint -->
+    <div style="margin-top:64px;display:grid;grid-template-columns:1fr 1.6fr;gap:0;border:1px solid var(--rule);">
+      <div style="background:var(--ink);color:var(--paper);padding:42px 36px;">
+        <div class="sec-label" style="color:var(--red);margin-bottom:16px;">Hibbett · In every ZIP that's in the building</div>
+        <h3 style="font-family:'Anton',sans-serif;font-size:40px;line-height:.95;text-transform:uppercase;color:#fff;margin-bottom:18px;">The Hibbett map looks like the Unfazed RSVP list.</h3>
+        <p style="font-size:14.5px;line-height:1.6;color:rgba(244,239,230,.78);">82% of Unfazed attendees live in <strong style="color:#fff;">metro Atlanta</strong>. Hibbett has a store in or near <strong style="color:#fff;">every single one</strong> of those ZIP codes — plus the regional cities that follow the ATL drop calendar. After Aug 29, the fits go from the Hibbett lobby to the Hibbett storefront, two exits from home.</p>
+      </div>
+      <div style="padding:32px 36px;background:#fff;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:18px;">Atlanta-metro + Southeast Hibbett footprint · partial list</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px 24px;">
+          <div><div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:1.5px;color:var(--red);text-transform:uppercase;margin-bottom:6px;">ATL Metro</div><div style="font-size:13.5px;line-height:1.6;font-weight:600;">Lithonia<br>Stonecrest<br>Stone Mountain<br>Decatur<br>South DeKalb</div></div>
+          <div><div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:1.5px;color:var(--red);text-transform:uppercase;margin-bottom:6px;">South / West</div><div style="font-size:13.5px;line-height:1.6;font-weight:600;">Union City<br>College Park<br>Riverdale<br>Jonesboro<br>Douglasville</div></div>
+          <div><div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:1.5px;color:var(--red);text-transform:uppercase;margin-bottom:6px;">North / East</div><div style="font-size:13.5px;line-height:1.6;font-weight:600;">Marietta<br>Kennesaw<br>Lawrenceville<br>Conyers<br>Covington</div></div>
+          <div><div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:1.5px;color:var(--red);text-transform:uppercase;margin-bottom:6px;">Outer ATL</div><div style="font-size:13.5px;line-height:1.6;font-weight:600;">Newnan<br>Cartersville<br>McDonough<br>Griffin<br>Carrollton</div></div>
+          <div><div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:1.5px;color:var(--red);text-transform:uppercase;margin-bottom:6px;">Athens / N. GA</div><div style="font-size:13.5px;line-height:1.6;font-weight:600;">Athens<br>Gainesville<br>Cumming<br>Dahlonega<br>Toccoa</div></div>
+          <div><div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:1.5px;color:var(--red);text-transform:uppercase;margin-bottom:6px;">Regional pull</div><div style="font-size:13.5px;line-height:1.6;font-weight:600;">Birmingham, AL<br>Chattanooga, TN<br>Augusta, GA<br>Macon, GA<br>Columbus, GA</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 — DIGITAL CAMPAIGN ============ -->
+<section id="campaign" class="dark">
+  <div class="wrap">
+    <div class="sec-hd">
+      <div class="sec-num">06</div>
+      <div>
+        <div class="sec-label">The Digital Campaign · Built by Hibbett · Shot in the Hibbett Lobby</div>
+        <h2 class="sec-title">#HibbettFitCheck. The hashtag that turns 3,000 attendees into Hibbett posters.</h2>
+        <p class="sec-lede">
+          A Hibbett-owned content engine inside the lobby that lets <strong>every guest become a Hibbett content creator</strong> — incentivized by gift cards, surfaced on a live wall, and amplified across Hibbett's own channels for six weeks. The hashtag carries the campaign before, during, and long after the event.
+        </p>
+      </div>
+    </div>
+
+    <div class="camp-hero">
+      <div class="camp-eye">● Campaign concept · The hashtag</div>
+      <h3 class="camp-name">
+        #HibbettFitCheck
+        <span class="small">Post your fit from the Hibbett lobby. Win Hibbett. Get reposted by Hibbett. Simple.</span>
+      </h3>
+      <p class="camp-lede">
+        Every guest who steps onto the Hibbett riser, tags <strong>@hibbett</strong> and posts with <strong>#HibbettFitCheck</strong> is automatically entered into a live giveaway: <strong>three $500 Hibbett gift cards</strong> drawn from the stage at the end of the night, plus a <strong>$2,500 Hibbett shopping spree</strong> for the post with the most engagement by Sept 5. <em>Hibbett pays a small bounty for content; Hibbett owns the content forever.</em>
+      </p>
+    </div>
+
+    <div class="camp-modules">
+      <div class="cm">
+        <div class="n">01</div>
+        <div class="step">Module · The Lobby</div>
+        <h4>The Hibbett Lobby Set.</h4>
+        <p>A <strong>fully Hibbett-branded lobby</strong> at The Foundry — vinyl floor decals, ringed lighting, branded riser. Every one of the 3,000 attendees passes through it to enter the show. The lobby <em>is</em> the entry experience, and Hibbett owns it head to toe.</p>
+        <ul>
+          <li>Hibbett vinyl, lighting + step-and-repeat backdrop</li>
+          <li>Live photo + 9:16 video capture (in-house creator team)</li>
+          <li>Photos AirDropped instantly — pre-tagged @hibbett #HibbettFitCheck</li>
+        </ul>
+      </div>
+      <div class="cm">
+        <div class="n">02</div>
+        <div class="step">Module · The incentive</div>
+        <h4>Post to win Hibbett.</h4>
+        <p>The hashtag is the giveaway. Every <strong>#HibbettFitCheck</strong> post unlocks a chance at <strong>$500 gift cards on the night</strong> + a <strong>$2,500 spree</strong> at week 1. The wall in the lobby shows the leaderboard live — attendees can <em>see themselves climbing</em>.</p>
+        <ul>
+          <li>3 × <strong>$500 Hibbett gift cards</strong> drawn live, on stage</li>
+          <li>1 × <strong>$2,500 Hibbett spree</strong> — best post by Sept 5</li>
+          <li>Top 10 posts <strong>reposted by @hibbett</strong> on official channels</li>
+        </ul>
+      </div>
+      <div class="cm">
+        <div class="n">03</div>
+        <div class="step">Module · Owned</div>
+        <h4>The 6-Week Hibbett Edit.</h4>
+        <p>Hibbett walks out of Aug 29 with <strong>200+ pieces of original content</strong> — fits, faces, and Hibbett SKUs shot in the lobby. Sequenced across Hibbett channels Aug 30 → Oct 10 with #HibbettFitCheck as the through-line.</p>
+        <ul>
+          <li>~30 IG/TikTok edits · weekly drops</li>
+          <li>3 long-form YouTube Shorts · attendee stories</li>
+          <li>Hibbett.com landing page hero loop</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="camp-deliver">
+      <div>
+        <div class="eye">● Promotion mechanic</div>
+        <h5>How #HibbettFitCheck pays Hibbett back.</h5>
+      </div>
+      <div class="deliv">
+        <div class="k">In the lobby (Aug 29)</div>
+        <div class="v">
+          <ul>
+            <li>3,000 attendees walk a <strong>Hibbett-branded entrance</strong></li>
+            <li>#HibbettFitCheck <strong>wall in the lobby</strong> publishes posts in real time</li>
+            <li>$500 gift cards drawn <strong>live from the stage</strong></li>
+          </ul>
+        </div>
+      </div>
+      <div class="deliv">
+        <div class="k">After (Aug 30 → Oct 10)</div>
+        <div class="v">
+          <ul>
+            <li>200+ <strong>Hibbett-owned</strong> #HibbettFitCheck assets</li>
+            <li>$2,500 grand prize spree drives <strong>repeat posts</strong> through Sept 5</li>
+            <li>Sequenced flighting on <strong>Hibbett channels first</strong></li>
+            <li>Hibbett.com landing page hero loop</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 — THE ASK · 3 TIERS ============ -->
+<section id="ask" class="dark">
+  <div class="wrap">
+    <div class="sec-hd">
+      <div class="sec-num">07</div>
+      <div>
+        <div class="sec-label">The Ask · Three sponsor packages</div>
+        <h2 class="sec-title">Three ways for Hibbett to come to the party.</h2>
+        <p class="sec-lede">
+          Pick the level. Each tier is <strong>fully self-contained</strong> — no add-ons, no surprise fees. Every dollar of every tier is accounted for between Unfazed Exhibit operations, female-designer programming, and on-site Hibbett retail activation. The slots are held through <strong>June 30, 2026</strong>.
+        </p>
+      </div>
+    </div>
+
+    <div class="tiers">
+      <!-- TIER 1 -->
+      <div class="tier">
+        <div class="tier-no">Tier 01 · Entry</div>
+        <div class="tier-name">Lobby<br>Presence</div>
+        <div class="tier-tag">Hibbett in the lobby. Logo lock-up. Brand presence. Content in the bag.</div>
+        <div class="tier-price"><span class="pre">$</span><span style="font-size:38px;line-height:1;vertical-align:18px;color:rgba(244,239,230,.7);letter-spacing:1px;">By invitation</span></div>
+        <div class="tier-per">All-in · single line item</div>
+        <div class="tier-incl-l">Includes</div>
+        <ul>
+          <li><strong>Hibbett-branded brand table</strong> in the lobby — Hibbett merchandising + curated picks</li>
+          <li><strong>Logo lock-up</strong> on flyer, ticketing, on-screen loops + Unfazed recap</li>
+          <li>QR codes → <strong>Hibbett.com</strong> · lobby + table panels</li>
+          <li><strong>Raw footage rights</strong> from the lobby table (Hibbett may publish freely)</li>
+          <li>Co-billed shout in the Unfazed channel recap reel</li>
+        </ul>
+      </div>
+
+      <!-- TIER 2 -- RECOMMENDED -->
+      <div class="tier rec">
+        <div class="tier-rec-flag">★ Recommended</div>
+        <div class="tier-no">Tier 02 · Anchor</div>
+        <div class="tier-name">The Hibbett<br>Lobby.</div>
+        <div class="tier-tag">Hibbett owns the lobby end-to-end. Branded entrance, fit-check riser, live wall.</div>
+        <div class="tier-price"><span class="pre" style="color:#fff">$</span><span style="font-size:38px;line-height:1;vertical-align:18px;color:rgba(255,255,255,.85);letter-spacing:1px;">By invitation</span></div>
+        <div class="tier-per">Everything in Tier 01, plus —</div>
+        <div class="tier-incl-l">Adds</div>
+        <ul>
+          <li><strong>Full lobby takeover</strong> — Hibbett vinyl, lighting, step-and-repeat, fit-check riser</li>
+          <li><strong>#HibbettFitCheck Wall</strong> — live projection publishing tagged fits in real time</li>
+          <li><strong>3 × $500 Hibbett gift cards</strong> drawn live from the stage (paid for by Hibbett, branded as Hibbett)</li>
+          <li><strong>Hibbett creator team</strong> on-site capturing the lobby for 6 hours</li>
+          <li><strong>Co-host designation</strong> on the official flyer + lobby billing</li>
+          <li>200+ <strong>Hibbett-owned</strong> content assets, Aug 30 → Oct 10 rollout</li>
+        </ul>
+      </div>
+
+      <!-- TIER 3 -- PREMIUM -->
+      <div class="tier">
+        <div class="tier-no">Tier 03 · Title</div>
+        <div class="tier-name">Hibbett<br>Presents.</div>
+        <div class="tier-tag">Title billing. Lobby + post-event ATL store circuit + 5-creator Hibbett Champions retainer.</div>
+        <div class="tier-price"><span class="pre">$</span><span style="font-size:38px;line-height:1;vertical-align:18px;color:rgba(244,239,230,.7);letter-spacing:1px;">By invitation</span></div>
+        <div class="tier-per">Everything in Tier 02, plus —</div>
+        <div class="tier-incl-l">Adds</div>
+        <ul>
+          <li><strong>"Hibbett Presents"</strong> billing on flyer, ticketing, and Unfazed channel recap</li>
+          <li><strong>$2,500 #HibbettFitCheck spree</strong> — best post by Sept 5, paid + presented by Hibbett</li>
+          <li><strong>ATL store circuit</strong> — every Hibbett across metro ATL runs an event-recap end-cap + loop, Sep → Oct</li>
+          <li><strong>Hibbett Champions program</strong> — 5 ATL Gen Z creators on retainer through NBA tip-off</li>
+          <li><strong>Hibbett.com hero loop</strong> shot live in the Hibbett lobby — 6-week run</li>
+          <li><strong>Pre-event teaser content</strong> — Hibbett channels seed the lobby + giveaway 14 days out</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ask-grid" style="margin-top:48px;">
+      <div class="ask-l">
+        <div class="eye">● Recommendation</div>
+        <div style="font-family:'Anton',sans-serif;font-size:88px;line-height:.9;color:#fff;margin:8px 0 18px;">Tier 02.</div>
+        <h3>The sweet spot.</h3>
+        <p>Tier 02 hands Hibbett the entire lobby — the branded entrance, the fit-check riser, the live #HibbettFitCheck wall, the gift-card moment, and 200+ owned assets. Tier 03 extends the moment beyond Aug 29 into the <strong>ATL store circuit</strong> with a 5-creator Hibbett Champions retainer through NBA tip-off.</p>
+      </div>
+      <div class="ask-r">
+        <div class="cell" style="border-bottom:0;">
+          <div class="lab">How the tiers are built</div>
+          <h4>Allocation, line-by-line.</h4>
+          <ul>
+            <li><strong>Lobby build:</strong> vinyl, lighting, step-and-repeat, fit-check riser, signage</li>
+            <li><strong>#HibbettFitCheck wall:</strong> hardware, moderation, custom graphic system</li>
+            <li><strong>Capture + post:</strong> on-site creator team · 6 weeks of post-event editing</li>
+            <li><strong>Tier 03 only:</strong> ATL store activation kits · Hibbett Champions retainer</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 — CLOSE ============ -->
+<section class="close-hero">
+  <div class="close-eye">● Closing the loop</div>
+  <h2 class="close-title">
+    Unfazed <span class="em">picked</span> the room.<br>
+    Quavo picked the night.<br>
+    <span class="ital">Hibbett, the door is open. Come to the party.</span>
+  </h2>
+  <div class="close-meta">
+    <a href="mailto:partners@unfazedexhibit.com">partners@unfazedexhibit.com</a> · <a href="mailto:labaron@unfazedexhibit.com">labaron@unfazedexhibit.com</a>
+  </div>
+</section>
+
+<footer>
+  <div>UNFAZED <span class="x">×</span> HIBBETT · DOC-26.05</div>
+  <div>Partnership Brief · Atlanta, GA</div>
+  <div>© 2026 Unfazed Exhibit LLC · Made with <span class="x">CULTURE</span></div>
+</footer>
+
+</body>
+</html>
